@@ -1,0 +1,17 @@
+=== Employee Report ===
+Total employees: 10
+Company average salary: ₹86,300.00
+
+Engineering (5 employees)
+  Average Salary: ₹99,000.00
+  Highest Paid: Grace
+
+HR (2 employees)
+  Average Salary: ₹66,500.00
+  Highest Paid: Heidi
+
+Marketing (3 employees)
+  Average Salary: ₹78,333.33
+  Highest Paid: Dave
+
+

@@ -1,0 +1,14 @@
+2024-01-15 08:00:01 INFO Server started on port 8080
+2024-01-15 08:01:22 INFO GET /api/users 200
+2024-01-15 08:01:45 ERROR Database connection timeout
+2024-01-15 08:02:10 INFO GET /api/products 200
+2024-01-15 08:02:55 WARNING High memory usage: 87%
+2024-01-15 08:03:30 INFO POST /api/orders 201
+2024-01-15 08:04:00 ERROR Failed to send email: SMTP timeout
+2024-01-15 08:04:45 INFO GET /api/users 200
+2024-01-15 08:05:10 ERROR Database connection timeout
+2024-01-15 08:05:55 INFO GET /api/health 200
+2024-01-15 08:06:20 WARNING Response time exceeded 2s: /api/reports
+2024-01-15 08:07:00 INFO DELETE /api/sessions/42 204
+2024-01-15 08:07:30 ERROR Unhandled exception in worker thread
+2024-01-15 08:08:00 INFO Server shutdown initiated

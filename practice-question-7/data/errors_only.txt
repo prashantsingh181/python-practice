@@ -1,0 +1,4 @@
+2024-01-15 08:01:45 ERROR Database connection timeout
+2024-01-15 08:04:00 ERROR Failed to send email: SMTP timeout
+2024-01-15 08:05:10 ERROR Database connection timeout
+2024-01-15 08:07:30 ERROR Unhandled exception in worker thread

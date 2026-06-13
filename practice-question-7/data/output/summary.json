@@ -1,0 +1,22 @@
+{
+  "total_employees": 10,
+  "departments": {
+    "Engineering": {
+      "count": 5,
+      "avg_salary": 99000.0,
+      "highest_paid": "Grace"
+    },
+    "HR": {
+      "count": 2,
+      "avg_salary": 66500.0,
+      "highest_paid": "Heidi"
+    },
+    "Marketing": {
+      "count": 3,
+      "avg_salary": 78333.33333333333,
+      "highest_paid": "Dave"
+    }
+  },
+  "company_avg_salary": 86300.0,
+  "highest_overall": "Grace"
+}

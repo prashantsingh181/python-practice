@@ -1,0 +1,18 @@
+{
+  "app_name": "MyApp",
+  "version": "1.0.0",
+  "server": {
+    "host": "localhost",
+    "port": 9090,
+    "debug": false
+  },
+  "database": {
+    "url": "postgresql://localhost:5432/mydb",
+    "pool_size": 10
+  },
+  "allowed_origins": [
+    "http://localhost:3000",
+    "https://myapp.com"
+  ],
+  "last_updated": "2026-06-13"
+}
