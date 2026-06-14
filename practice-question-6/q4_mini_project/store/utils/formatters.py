@@ -14,7 +14,7 @@ def format_currency(amount: float) -> str:
 
 def format_order_summary(order: Order) -> str:
 
-    output = f"Order#{order.order_id} [{order.status}]\n"
+    output = f"Order #{order.order_id} [{order.status}]\n"
     for item in order.items:
         output += f"- {item.name}: {format_currency(item.price)}\n"
 

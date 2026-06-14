@@ -22,13 +22,8 @@ def is_email(value: str) -> bool:
     is_email("a@b.io")             → True
     """
     # Your implementation:
-    return bool(re.search(r'[\w\.\-]+@[a-zA-Z\-]+\.[a-zA-Z]{2,6}', value))
+    return bool(re.fullmatch(r"[\w\.\-]+@[a-zA-Z\-]+\.[a-zA-Z]{2,6}", value))
 
-if(__name__ == "__main__"):
-    print(is_email("user@example.com"))
-    print(is_email("bad@"))
-    print(is_email("nodomain"))
-    print(is_email("a@b.io"))
 
 def is_url(value: str) -> bool:
     """
@@ -45,6 +40,10 @@ def is_url(value: str) -> bool:
 
 
 if __name__ == "__main__":
+    print(is_email("user@example.com"))
+    print(is_email("bad@"))
+    print(is_email("nodomain"))
+    print(is_email("a@b.io"))
     print(is_url("https://google.com"))
     print(is_url("http://x.io"))
     print(is_url("ftp://nope.com"))

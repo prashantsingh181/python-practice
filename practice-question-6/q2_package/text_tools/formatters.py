@@ -1,4 +1,5 @@
 import re
+
 # ============================================================
 # Q2: text_tools/formatters.py
 # ============================================================
@@ -21,13 +22,9 @@ def slugify(text: str) -> str:
     slugify("100% Organic!")      → "100-organic"
     """
     # Your implementation:
-    striped_alphanum = re.sub(r'[^A-Za-z0-9\s]', '', text.strip().lower())
-    return re.sub(r'\s+', '-', striped_alphanum)
+    striped_alphanum = re.sub(r"[^A-Za-z0-9\s]", "", text.strip().lower())
+    return re.sub(r"\s+", "-", striped_alphanum)
 
-if __name__ == "__main__":
-    print(slugify("Hello World"))
-    print(slugify("  Python is Great!"))
-    print(slugify("100% Organic!"))
 
 def truncate(text: str, max_length: int, suffix: str = "...") -> str:
     """
@@ -41,9 +38,15 @@ def truncate(text: str, max_length: int, suffix: str = "...") -> str:
     """
     # Your implementation:
     # return text if len(text) < max_length
-    return text if len(text) < max_length else text[:max_length - len(suffix)] + suffix
+    return (
+        text if len(text) <= max_length else text[: max_length - len(suffix)] + suffix
+    )
+
 
 if __name__ == "__main__":
+    print(slugify("Hello World"))
+    print(slugify("  Python is Great!"))
+    print(slugify("100% Organic!"))
     print(truncate("Hello World", 8))
     print(truncate("Hi", 10))
     print(truncate("Hello World", 8, " →"))

@@ -18,6 +18,10 @@ def celsius_to_fahrenheit(c: float) -> float:
 def is_prime(n: int) -> bool:
     """Return True if n is a prime number."""
     # Your implementation:
+
+    if n <= 1:
+        return False
+
     sqrt_int = math.trunc(math.sqrt(n))
 
     for i in range(2, sqrt_int + 1):

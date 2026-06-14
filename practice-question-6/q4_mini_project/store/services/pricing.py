@@ -16,4 +16,4 @@ def apply_discount(price: float, discount_pct: float) -> float:
 
 
 def calculate_total(order: Order) -> float:
-    return reduce(lambda acc, item: acc + item.price, order.items, 0)
+    return sum([item.price for item in order.items])
